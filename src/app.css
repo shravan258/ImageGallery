@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+.c1 {
+  background-color: #b983ff;
+  height: 400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 7%;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 50px;
+}
+
+.heading-2 {
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 11.5%;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+}
+
+.search-bar {
+  margin-top: 17%;
+  margin-left: 38%;
+  width: 23%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+}
+input[type='text'],
+select {
+  outline: none;
+  padding-left: 20px;
+}
+
+.search-btn {
+  position: absolute;
+  margin-top: 265px;
+  height: 28px;
+  margin-left: -35px;
+  background-color: white;
+  color: #b983ff;
+  outline: none;
+  border: none;
+}
+
+.image-container {
+  margin: 50px;
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding-bottom: 12px;
+}
+
+.pics {
+  margin-bottom: 12px;
+}
+
+.close-button {
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 91%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-size: larger;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.copy {
+  background-color: #b983ff;
+}
