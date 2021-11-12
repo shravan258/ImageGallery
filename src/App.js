@@ -10,7 +10,7 @@ function App() {
   const [search, setsearch] = useState('');
   const [searchList, setsearchList] = useState([]);
   const URL = 'https://pixabay.com/api';
-  const KEY = '24302617-99249ba60eedc8e8ab1ca5255';
+  const KEY = process.env.SECRET_KEY;
   const getImages = async (event) => {
     const result = await axios.get('https://picsum.photos/v2/list');
     setimagesList(result.data);
