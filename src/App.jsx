@@ -34,15 +34,27 @@ function App() {
       <div className='c1'>
         <h1 className='heading'>Image Gallery</h1>
         <h3 className='heading-2'>Explore The world of images...</h3>
-        <input
-          type='text'
-          className='search-bar'
-          value={search}
-          onChange={(event) => setsearch(event.target.value)}
-        />
-        <button className='search-btn' onClick={searchHandler}>
-          <SearchIcon />
-        </button>
+        <div
+          style={{
+            display: 'flex',
+            width: 'min(80%,350px)',
+            borderRadius: '6px',
+            background: '#fff',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '0.3rem',
+          }}
+        >
+          <input
+            type='text'
+            className='search-bar'
+            value={search}
+            onChange={(event) => setsearch(event.target.value)}
+          />
+          <button className='search-btn' onClick={searchHandler}>
+            <SearchIcon />
+          </button>
+        </div>
       </div>
       <div className=' image-container '>
         {searchList.length === 0 ? (
@@ -62,10 +74,22 @@ function App() {
           </div>
         ) : (
           <div>
-            <h1>Search Results</h1>
-            <button onClick={() => setsearchList([])} className='close-button'>
-              <CloseIcon />
-            </button>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                width: '100%',
+              }}
+            >
+              <h1>Search Results</h1>
+              <button
+                onClick={() => setsearchList([])}
+                className='close-button'
+              >
+                <CloseIcon />
+              </button>
+            </div>
             <div className='gallery'>
               {searchList.map((image) => (
                 <div className='pics'>

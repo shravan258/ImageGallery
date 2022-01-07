@@ -3,6 +3,10 @@
 .c1 {
   background-color: #b983ff;
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 * {
@@ -11,27 +15,29 @@
 }
 
 .heading {
-  position: absolute;
-  margin-left: 38%;
-  margin-top: 7%;
+  /* position: absolute;
+  margin-left: 38%; */
+  /* margin-top: 7%; */
   color: white;
   font-family: 'Oxygen', sans-serif;
   font-size: 50px;
 }
 
 .heading-2 {
-  position: absolute;
+  /* position: absolute;
   margin-left: 38%;
-  margin-top: 11.5%;
+  margin-top: 11.5%; */
+  margin-top: 0.5rem;
   color: white;
   font-family: 'Oxygen', sans-serif;
   font-size: 20px;
 }
 
 .search-bar {
-  margin-top: 17%;
-  margin-left: 38%;
-  width: 23%;
+  /* margin-top: 17%;
+  margin-left: 38%; */
+  /* margin-top: 1rem; */
+  width: 80%;
   height: 35px;
   border: none;
   border-radius: 6px;
@@ -43,10 +49,10 @@ select {
 }
 
 .search-btn {
-  position: absolute;
-  margin-top: 265px;
+  /* position: absolute; */
+  /* margin-top: 265px; */
   height: 28px;
-  margin-left: -35px;
+  /* margin-left: -35px; */
   background-color: white;
   color: #b983ff;
   outline: none;
@@ -68,14 +74,22 @@ select {
   padding-bottom: 12px;
 }
 
+@media screen and (max-width: 750px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    column-count: 1;
+  }
+}
 .pics {
   margin-bottom: 12px;
 }
 
 .close-button {
-  position: absolute;
-  margin-top: -45px;
-  margin-left: 91%;
   outline: none;
   border: none;
   border-radius: 15px;
